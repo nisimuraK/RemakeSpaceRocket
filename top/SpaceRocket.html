@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<head>
+<title>Space Rocket_top</title>
+<link rel="shortcut icon" href="../top/img/Space%20icons.ico">
+<link href="../top/dist/skrollr.min.js" />
+<link href="../top/css/nav.css" rel="stylesheet">
+<link href="js/text.js">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+<!--  画面サイズなどの情報入手、PC向けかスマホ向けか判断  -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+    
+<style>
+    .html,body{
+        font-family: 'Noto Serif', serif;
+        background-image: url(img/topbackground1.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #000;
+    }
+    .top_title{
+     width: 100%;
+     height: 13%;
+    }
+    .top_text{
+        color: #fff;
+        font-size: 40px;
+text-align: center;
+        
+    }
+    .select{
+
+    }
+    .text_URL1{
+        color: #fff;
+        font-size: 40px;
+text-align: center;
+    }
+    .text_URL2{
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+    }
+    .version{
+        text-align: right;
+    }
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+    color: #fff;
+}
+a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+  
+}
+a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+    .version{
+        color: #fff;
+        font-size: 25px;
+    }
+</style>
+    
+<header>
+  <div class="header-logo-menu">
+  <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">Profileに戻る</div>
+  </div>
+  <div class="logo-area"></div>
+  </div>
+</header>
+      
+
+    <body>
+        
+<div class="top_title" data-0="opacity:1;"data-700="opacity:1;">
+    <div class="top_text">
+         <h1>Space Rocket</h1>
+        <p></p>
+    </div>
+        </div>
+        
+<div class="select" data-750="opacity:1;"data-751="opacity:1;">
+    <h1>Select</h1>
+    <div class="text_URL1">
+    <a href="Launch.html">ロケットを打ち上げる / Launch a rocket</a>
+    </div>
+        </div>
+    <div class="text_URL2">
+        <a href="KnowWorks.html">仕組みを知る / Know how it works</a>
+        </div>
+        <div class="contact">
+        
+        </div>
+        
+        <div class="version">
+<!--
+X: 見た目や操作性に影響を及ぼすような大きな変更やページの追加など
+Y: 細かな機能向上や部分的な情報の追加やページの修正など
+Z: バグ修正や誤字脱字の訂正など
+-->
+        <p>ver.1.1.0</p>
+        </div>
+        
+<script type="text/javascript" src="dist/skrollr.min.js"></script>
+<script type="text/javascript">skrollr.init();</script>
+    </body>
+</html>
