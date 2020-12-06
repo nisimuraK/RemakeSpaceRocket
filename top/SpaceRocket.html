@@ -6,46 +6,94 @@
 <title>Space Rocket_top</title>
 <link rel="shortcut icon" href="../top/img/Space%20icons.ico">
 <link href="../top/dist/skrollr.min.js" />
+<link href="../top/css/SRtop.css" rel="stylesheet">
 <link href="../top/css/nav.css" rel="stylesheet">
 <link href="js/text.js">
-
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-</head>
-<!--  画面サイズなどの情報入手、PC向けかスマホ向けか判断  -->
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    
+    <!--  画面サイズなどの情報入手、PC向けかスマホ向けか判断  -->
 <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
     
 <style>
     .html,body{
-        font-family: 'Noto Serif', serif;
+        width: 100%;
+        height: 100%;
+	    margin: 0;
+        font-family: 'Noto Sans JP', sans-serif;
         background-image: url(img/topbackground1.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         background-color: #000;
+        overflow-x: hidden;
     }
-    .top_title{
+footer{
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background-color: #174a5c;
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+}
+    .footerFixed{
+    min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+    position: relative;/* ←相対位置 */
+    padding-bottom: 60px; /* ←フッターの高さを指定 */
+    box-sizing: border-box;
+    }
+ul.footer-nav li {
+display: inline;
+    width: 100%;
+}
+    .top-title{
+     font-family: 'Noto Serif', serif;
      width: 100%;
-     height: 13%;
+    height: 7%;
     }
-    .top_text{
-        color: #fff;
-        font-size: 40px;
-text-align: center;
-        
-    }
-    .select{
-
-    }
-    .text_URL1{
-        color: #fff;
-        font-size: 40px;
-text-align: center;
-    }
-    .text_URL2{
+    .top-text{
         color: #fff;
         font-size: 40px;
         text-align: center;
+        padding: 8%;
+        margin: 10%;
+    }
+    .select{
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        padding-top: 30%;
+    }
+    .select-title{
+        color: #fff;
+        font-size: 40px;
+    }
+    .URL{
+
+    }
+    .text-URL1{
+        color: #fff;
+        font-size: 40px;
+text-align: center;
+    }
+    .text-URL2{
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+    }
+    .contact{
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        height: 0%;
+    }
+    .contact-text{
+        font-size: 30px;
     }
     .version{
         text-align: right;
@@ -80,38 +128,47 @@ a:hover::after {
 </style>
     
 <header>
-  <div class="header-logo-menu">
-  <div id="nav-drawer">
-      <input id="nav-input" type="checkbox" class="nav-unshown">
+    <nav class="top-nav">
       <label id="nav-open" for="nav-input"><span></span></label>
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-      <div id="nav-content">Profileに戻る</div>
-  </div>
-  <div class="logo-area"></div>
-  </div>
+      <div id="nav-content">
+        <ul>
+            <li class="nav-list"><a href="#">Profileに戻る / Return to profile.</a></li>
+            <li class="nav-list"><a href="../top/Launch.html">ロケットを打ち上げる / Launch a rocket.</a></li>
+            <li class="nav-list"><a href="../top/KnowWorks.html">仕組みを知る / Know how it works.</a></li>
+          </ul>
+        </div>
+ 
+    </nav>
 </header>
       
-
     <body>
-        
-<div class="top_title" data-0="opacity:1;"data-700="opacity:1;">
-    <div class="top_text">
+<div class="top-title" data-0="opacity:1;"data-400="opacity:0;">
+    <div class="top-text">
          <h1>Space Rocket</h1>
         <p></p>
     </div>
         </div>
         
-<div class="select" data-750="opacity:1;"data-751="opacity:1;">
+<div class="select" data-450="opacity:0;"data-550="opacity:1;"data-850="opacity:1;"data-1100="opacity:0;">
+    <div class="select-title">
     <h1>Select</h1>
-    <div class="text_URL1">
-    <a href="Launch.html">ロケットを打ち上げる / Launch a rocket</a>
+    <dive class="URL">
+    <div class="text-URL1">
+    <a href="Launch.html">ロケットを打ち上げる / Launch a rocket.</a>
+    </div>
+    <div class="text-URL2">
+        <a href="KnowWorks.html">仕組みを知る / Know how it works.</a>
+        </div>
+    </dive>
     </div>
         </div>
-    <div class="text_URL2">
-        <a href="KnowWorks.html">仕組みを知る / Know how it works</a>
-        </div>
-        <div class="contact">
         
+<div class="contact" data-1000="opacity:0;"data-1200="opacity:1;"data-1100="display:block;"data-1150="background:rgba(0,0,0,0);">
+            <h1>Contact</h1>
+            <dive class="contact-text">○○○@gmail.com</dive>
+            <p></p>
+            <p></p>
         </div>
         
         <div class="version">
@@ -120,9 +177,18 @@ X: 見た目や操作性に影響を及ぼすような大きな変更やペー�
 Y: 細かな機能向上や部分的な情報の追加やページの修正など
 Z: バグ修正や誤字脱字の訂正など
 -->
-        <p>ver.1.1.0</p>
+        <p>ver.1.1.0　</p>
         </div>
-        
+           <div class="footerFixed">
+        <footer>
+            <ul class="footer-nav">
+                <li class="footer-list"><a href="#">Profileに戻る<br>Return to profile.</a></li>
+                <li class="footer-list"><a href="../top/Launch.html">ロケットを打ち上げる<br>Launch a rocket.</a></li>
+                <li class="footer-list"><a href="../top/KnowWorks.html">仕組みを知る<br>Know how it works.</a></li>
+            </ul>
+            <p><br>©︎ 2020 NisimuraK</p>
+        </footer>
+        </div>
 <script type="text/javascript" src="dist/skrollr.min.js"></script>
 <script type="text/javascript">skrollr.init();</script>
     </body>

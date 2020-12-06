@@ -1,0 +1,75 @@
+/* 通常フォント
+font-family: 'Noto Sans JP', sans-serif;
+TopTitle
+font-family: 'Noto Serif', serif;
+*/
+@charset 'utf-8';
+nav{
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 45px;
+    padding: 0px;
+
+}
+nav li{
+    -webkit-transform: skewX(150deg);
+    -moz-transform: skewX(150deg);
+    transform: skewX(150deg);
+    border-right: 1px solid #000;
+}
+nav li a{
+    padding: 0 70px;
+    transform: skewX(-150deg);
+}
+.top-nav{
+    text-align: center;
+    position: fixed;
+    bottom: 90%;
+    width: 100%;
+    height: 10%;
+    background: rgba(255, 255, 255, .5);
+}
+.top-nav ul li{
+    display: inline-block;
+    width: 100%;  /* 任意のwidth */
+}
+.top-nav a{
+    color: #000;
+}
+.nav-content{
+      
+}
+.nav-list{
+    font-size: 25px;
+}
+
+
+
+/*1500px以下*/
+@media screen and(max-width: 1500px){
+    
+}
+
+
+@media screen and(max-width: 1000px){
+
+}
+
+@media screen and(max-width: 950px){
+    
+}
+
+@media screen and(max-width: 800px){
+    
+}
+
+@media screen and(max-width: 700px){
+    
+}
+
+@media screen and(max-width: 660px){
+    
+}
